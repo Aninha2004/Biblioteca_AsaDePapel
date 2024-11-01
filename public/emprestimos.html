@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empréstimos</title>
+    <link rel="stylesheet" href="css/emprestimos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cadastro_alunos.html">Cadastro de Alunos</a></li>
+                <li><a href="cadastro_livros.html">Cadastro de Livros</a></li>
+                <li><a href="emprestimos.html">Empréstimos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Registro de Empréstimos</h1>
+        <form id="formEmprestimos">
+            <label for="matricula">Matrícula do Aluno:</label>
+            <input type="text" id="matricula" name="matricula" required>
+            <label for="livro">Livro (ID):</label>
+            <input type="text" id="livro" name="livro" required>
+            <button type="submit">Registrar Empréstimo</button>
+        </form>
+
+        <h2>Empréstimos Registrados</h2>
+        <table id="tabelaEmprestimos">
+            <thead>
+                <tr>
+                    <th>Matrícula</th>
+                    <th>Livro</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <script src="js/emprestimos.js"></script>
+</body>
+</html>
